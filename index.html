@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git Branch Generator</title>
-  </head>
-  <body>
-    <form>
-     branch-type :<select name="branch">
-      <option>Feature</option>
-      <option>Bugfix</option>
-      <option>hotfix</option>
-    </select>  
-    <br>
-    user.name :<input type="text">
-    <br>
-    <textarea name="working-area" cols="30" rows="10">working-area-> </textarea>
-    <br>
-    <button>Creat branch</button>  
-  </form>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" class="css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="formate">
+            <form action="">
+
+                <div class="feature1">
+                    <label for="name">User Name: <input type="text" name="name" id="name"
+                            placeholder="Enter your name"></label><br><br>
+                </div>
+                <div class="selecter">
+                    <select id="opt" name="branch type">
+                        <option>--Select Branch Type--</option>
+                     <option>Feture</option>
+                        <option>Bugfix</option>
+                        <option>Hostfix</option>
+                        </label>
+                    </select><br><br>
+                </div>
+
+                <div class="feature2">
+                    <textarea id="work" name="text" cols="30"
+                    rows="10" placeholder="Working Area"></textarea>
+                </div>
+
+                <div class="feature3">
+                    <input type="button" name="branch" id="branch" value="Create Branch">
+                </div>
+
+        </div>
+    </div>
+</body>
+
 </html>
